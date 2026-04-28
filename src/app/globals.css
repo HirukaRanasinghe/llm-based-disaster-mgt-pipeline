@@ -1,0 +1,21 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --color-brand-light: #e0f2fe;
+  --color-brand: #0284c7;
+  --color-brand-dark: #0369a1;
+}
+
+body {
+  @apply bg-slate-50 text-slate-900;
+  font-family: 'Inter', sans-serif;
+}
+
+.glass-panel {
+  @apply bg-white/70 backdrop-blur-md border border-white/40 shadow-lg rounded-2xl;
+}
+
+.btn-primary {
+  @apply bg-brand text-white px-6 py-2 rounded-lg hover:bg-brand-dark transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5 active:translate-y-0;
+}
